@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dispatch Form</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Dispatch Form</h1>
+        <form id="dispatchForm">
+            <label for="destination">Destination:</label><br>
+            <input type="text" name="destination" id="destination" required><br>
+            <label for="jobNo">Job No:</label><br>
+            <input type="number" name="jobNo" id="jobNo" required><br>
+            <label for="dcNo">Dc No:</label><br>
+            <input type="number" name="dcNo" id="dcNo" required><br>
+            <label for="invoiceNo">Invoice No:</label><br>
+            <input type="number" name="invoiceNo" id="invoiceNo" required><br>
+            <label for="client">Client:</label><br>
+            <input type="text" name="client" id="client" required><br>
+            <label for="courier">Courier:</label><br>
+            <input type="text" name="courier" id="courier" required><br>
+            <label for="transactionNo">Transaction No:</label><br>
+            <input type="number" name="transactionNo" id="transactionNo" required><br>
+            <label for="noOfBoxes">No of Boxes:</label><br>
+            <input type="number" name="noOfBoxes" id="noOfBoxes" required><br>
+            <button type="submit" id="addDispatch">Add Dispatch</button>
+        </form>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalContent"></div>
+            <button id="editBtn">Edit</button>
+            <button id="deleteBtn">Delete</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

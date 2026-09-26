@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Grid Template</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #fff; /* Default body background color */
+            color: #000; /* Default text color */
+        }
+        .blue-section {
+            background-image: linear-gradient(to right, rgb(77, 138, 243) , rgba(231, 60, 199, 0.803) );
+            color: #fff; /* White text color */
+            padding-bottom: 40px; /* Add some padding at the bottom */
+            height: 200px; /* Set the height of the blue section */
+        }
+        .section {
+            padding: 40px 0;
+        }
+        .section h1 {
+            font-size: 50px; 
+            margin-left: 00px;
+            margin-bottom: 0px;
+        }
+        .section p {
+            margin-bottom: 20px;
+            
+        }
+        .image-text {
+            width: 100%; /* Make the text width 100% */
+            text-align: center; /* Center-align the text */
+            max-width: 300px;
+        }
+        .center-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section blue-section text-center">
+            <h1>Bootstrap Grid Template</h1>
+        </div>
+        <div class="row" style="padding-top: 20px;"> <!-- Add padding-top to create space -->
+            <div class="col-md-4 text-center"> <!-- Add text-center class -->
+                <div class="image-container">
+                    <img src="https://picsum.photos/300/200" class="img-fluid" alt="Image 1">
+                    <div class="image-text">
+                        <p align="Justify">An image captures moments frozen in time, telling stories with every pixel. It's a visual narrative that speaks volumes without uttering a single word. Images evoke emotions, stir memories, and transport us to different realms with a mere glance.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center"> <!-- Add text-center class -->
+                <div class="image-container">
+                    <img src="https://picsum.photos/300/200" class="img-fluid" alt="Image 2">
+                    <div class="image-text">
+                        <p align="Justify">An image captures moments frozen in time, telling stories with every pixel. It's a visual narrative that speaks volumes without uttering a single word. Images evoke emotions, stir memories, and transport us to different realms with a mere glance.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center"> <!-- Add text-center class -->
+                <div class="image-container">
+                    <img src="https://picsum.photos/300/200" class="img-fluid" alt="Image 3">
+                    <div class="image-text">
+                        <p align="Justify">An image captures moments frozen in time, telling stories with every pixel. It's a visual narrative that speaks volumes without uttering a single word. Images evoke emotions, stir memories, and transport us to different realms with a mere glance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section center-section"> <!-- Add center-section class -->
+            <div class="row justify-content-center align-items-center"> <!-- Add justify-content-center and align-items-center for mobile centering -->
+                <div class="col-md-6 text-center"> <!-- Add text-center class -->
+                    <div class="image-container">
+                        <img src="https://picsum.photos/300/200" class="img-fluid" alt="Image 4">
+                        <div class="image-text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec ante erat. Aliquam congue metus ut quam.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

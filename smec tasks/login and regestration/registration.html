@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <!-- Link to your CSS file here -->
+    <link rel="stylesheet" href="sttyle.css">
+</head>
+<body>
+    <div class="registration-container">
+        <h1>Registration</h1>
+        <form>
+            <div class="form-group">
+                <label for="name">Enter Your Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="email">Enter Your Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="password">Create a Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword">
+            </div>
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="termsConditions" name="termsConditions">
+                <label for="termsConditions">I accept all terms and conditions</label>
+            </div>
+            <div class="form-group">
+                <button type="submit">Register Now</button>
+            </div>
+        </form>
+        <div class="login-link">
+            Already have an account? <a href="#">Login now</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Grid Template</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #fff; /* Default body background color */
+            color: #000; /* Default text color */
+        }
+        .blue-section {
+            background-color: #007bff; /* Blue background color */
+            color: #fff; /* White text color */
+            padding-bottom: 40px; /* Add some padding at the bottom */
+            height: 250px; /* Set the height of the blue section */
+        }
+        .section {
+            padding: 40px 0;
+        }
+        .section h1 {
+            margin-bottom: 0px;
+        }
+        .section p {
+            margin-bottom: 20px;
+        }
+        .title-line {
+            display: flex;
+            align-items: center;
+        }
+        .title-line h1 {
+            margin-right: 0px;
+            font-size: 50px; /* Adjust the font size of the titles */
+            margin-left: 50px;
+            padding-top: 10px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section blue-section text-center">
+            <div class="title-line">
+                <h1>Bootstrap Grid<br>Template</h1>
+                
+            </div>
+        </div>
+        <div class="row" style="padding-top: 20px;"> <!-- Add padding-top to create space -->
+            <div class="col-md-4">
+                <img src="image1.jpg" class="img-fluid" alt="Image 1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec ante erat.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="image2.jpg" class="img-fluid" alt="Image 2">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec ante erat.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="image3.jpg" class="img-fluid" alt="Image 3">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec ante erat.</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="image4.jpg" class="img-fluid" alt="Image 4">
+                </div>
+                <div class="col-md-6">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec ante erat. Aliquam congue metus ut quam.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

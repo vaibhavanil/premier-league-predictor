@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dispatch Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dispatch Form</h1>
+        <form id="dispatchForm">
+            <label for="destination">Destination:</label><br>
+            <input type="text" name="destination" id="destination" required><br>
+            <label for="jobNo">Job No:</label><br>
+            <input type="text" name="jobNo" id="jobNo" required><br>
+            <label for="dcNo">Dc No:</label><br>
+            <input type="text" name="dcNo" id="dcNo" required><br>
+            <label for="invoiceNo">Invoice No:</label><br>
+            <input type="text" name="invoiceNo" id="invoiceNo" required><br>
+            <label for="client">Client:</label><br>
+            <input type="text" name="client" id="client" required><br>
+            <label for="courier">Courier:</label><br>
+            <input type="text" name="courier" id="courier" required><br>
+            <label for="transactionNo">Transaction No:</label><br>
+            <input type="text" name="transactionNo" id="transactionNo" required><br>
+            <label for="noOfBoxes">No of Boxes:</label><br>
+            <input type="text" name="noOfBoxes" id="noOfBoxes" required><br>
+           
+            <button type="submit">Add Dispatch</button>
+        </form>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Destination</th>
+                <th>Job No</th>
+                <th>Dc No</th>
+                <th>Invoice No</th>
+                <th>Client</th>
+                <th>Courier</th>
+                <th>Transaction No</th>
+                <th>No of Boxes</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="dispatchTableBody"></tbody>
+    </table>
+    
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="editForm">
+                <label for="editDestination">Destination:</label><br>
+                <input type="text" name="editDestination" id="editDestination" required><br>
+                <label for="editJobNo">Job No:</label><br>
+                <input type="text" name="editJobNo" id="editJobNo" required><br>
+                <label for="editDcNo">Dc No:</label><br>
+                <input type="text" name="editDcNo" id="editDcNo" required><br>
+                <label for="editInvoiceNo">Invoice No:</label><br>
+                <input type="text" name="editInvoiceNo" id="editInvoiceNo" required><br>
+                <label for="editClient">Client:</label><br>
+                <input type="text" name="editClient" id="editClient" required><br>
+                <label for="editCourier">Courier:</label><br>
+                <input type="text" name="editCourier" id="editCourier" required><br>
+                <label for="editTransactionNo">Transaction No:</label><br>
+                <input type="text" name="editTransactionNo" id="editTransactionNo" required><br>
+                <label for="editNoOfBoxes">No of Boxes:</label><br>
+                <input type="text" name="editNoOfBoxes" id="editNoOfBoxes" required><br>
+                <button type="submit" id="updateBtn">Update</button>
+                <button type="button" id="deleteBtn">Delete</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
